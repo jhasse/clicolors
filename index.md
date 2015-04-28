@@ -17,10 +17,10 @@ should comply to no matter on which platform they are run.
 The idea is to have the following environment variables (which are currently
 already used for this exacty reason on some UNIX systems):
 
- * `CLICOLORS`
+ * `CLICOLOR`
    * If set, ANSI colors are supported and should be used when the program isn't
      piped.
- * `CLICOLORS_FORCE`
+ * `CLICOLOR_FORCE`
    * If set, ANSI colors should be enabled no matter what.
 
 If you have ideas or comments please
@@ -36,8 +36,8 @@ like this Python code example:
 import os, sys
 
 def has_colors():
-    if (("CLICOLORS" in os.environ and sys.stdout.isatty()) or
-        "CLICOLORS_FORCE" in os.environ):
+    if (("CLICOLOR" in os.environ and sys.stdout.isatty()) or
+        "CLICOLOR_FORCE" in os.environ):
         return True
     else:
         return False
@@ -51,6 +51,6 @@ enable colors in `cmd.exe`.
 ## Bug Reports
 
 This is a list of bug reports on programs which aren't yet acting properly to
-`CLICOLORS`:
+`CLICOLOR`:
 
  * [Waf build sytem](https://github.com/waf-project/waf/issues/1555)
