@@ -1,2 +1,5 @@
+# Site settings
+baseurl: "/clicolors"
+
 # Build settings
 markdown: kramdown

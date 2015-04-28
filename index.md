@@ -25,7 +25,7 @@ already used for this exacty reason on some UNIX systems):
 
 If you have ideas or comments please
 [create a new issue on GitHub](https://github.com/jhasse/clicolors/issues/new)
-or [edit this page](https://github.com/jhasse/clicolors/edit/master/index.md).
+or [edit this page](https://github.com/jhasse/clicolors/edit/gh-pages/index.md).
 
 ## How to Implement
 
