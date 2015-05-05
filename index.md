@@ -43,6 +43,20 @@ def has_colors():
         return False
 {% endhighlight %}
 
+## Supported Colors
+
+To get an idea what colors you can use, run the following Python script:
+
+{% highlight python %}
+RESET = "\x1b[0m"
+print("To reset attributes: \\x1b[0m\n")
+for i in range(0, 8):
+    print("\x1b[1;3{0}m\\x1b[1;3{0}m{1} \x1b[0;3{0}m\\x1b[0;3{0}m{1} "
+          "\x1b[1;4{0};3{0}m\\x1b[1;3{0};4{0}m{1}".format(i, RESET))
+{% endhighlight %}
+
+Also see the [ISO 6429 (ANSI) color sequences](http://www.perpetualpc.net/6429_colors.html#color_list).
+
 ## Windows
 
 Windows users should install [ANSICON](https://github.com/adoxa/ansicon) to
@@ -50,7 +64,8 @@ enable colors in `cmd.exe`.
 
 ## Bug Reports
 
-This is a list of bug reports on programs which aren't yet acting properly to
-`CLICOLOR`:
+This is a list of bug reports on the progress of supporting `CLICOLOR`:
 
  * [Waf build sytem](https://github.com/waf-project/waf/issues/1555)
+ * [Jenkins ANSI color plugin](https://github.com/dblock/jenkins-ansicolor-plugin/issues/51)
+ * [ANSICON](https://github.com/adoxa/ansicon/issues/77)
