@@ -66,6 +66,7 @@ enable colors in `cmd.exe`.
 
 This is a list of bug reports on the progress of supporting `CLICOLOR`:
 
- * [Waf build sytem](https://github.com/waf-project/waf/issues/1555)
+ * [clang compiler](https://llvm.org/bugs/show_bug.cgi?id=23609)
+ * [Waf build system](https://github.com/waf-project/waf/issues/1555)
  * [Jenkins ANSI color plugin](https://github.com/dblock/jenkins-ansicolor-plugin/issues/51)
  * [ANSICON](https://github.com/adoxa/ansicon/issues/77)
