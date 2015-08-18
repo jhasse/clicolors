@@ -14,14 +14,17 @@ Windows, or need to be passed a parameter like `--color` or
 That's why this page tries to create some sort of "standard" which programs
 should comply to no matter on which platform they are run.
 
-The idea is to have the following environment variables (which are currently
-already used for this exacty reason on some UNIX systems):
+The idea is to have the environment variables `CLICOLOR` and `CLICOLOR_FORCE` (which are currently
+already used for this exacty reason on some UNIX systems). When set, the following rules
+should apply:
 
- * `CLICOLOR`
-   * If set, ANSI colors are supported and should be used when the program isn't
+ * `CLICOLOR != 0`
+   * ANSI colors are supported and should be used when the program isn't
      piped.
- * `CLICOLOR_FORCE`
-   * If set, ANSI colors should be enabled no matter what.
+ * `CLICOLOR == 0`
+   * Don't output ANSI color escape codes.
+ * `CLICOLOR_FORCE != 0`
+   * ANSI colors should be enabled no matter what.
 
 If you have ideas or comments please
 [create a new issue on GitHub](https://github.com/jhasse/clicolors/issues/new)
@@ -29,15 +32,15 @@ or [edit this page](https://github.com/jhasse/clicolors/edit/gh-pages/index.md).
 
 ## How to Implement
 
-If you want to check in your program if ANSI colors are supported, it should
+If you want to check in your program if ANSI colors are supported, it should look
 like this Python code example:
 
 {% highlight python %}
 import os, sys
 
 def has_colors():
-    if (("CLICOLOR" in os.environ and sys.stdout.isatty()) or
-        "CLICOLOR_FORCE" in os.environ):
+    if ((os.getenv("CLICOLOR", "0") != "0" and sys.stdout.isatty()) or
+        os.getenv("CLICOLOR_FORCE", "0") != "0":
         return True
     else:
         return False
@@ -59,8 +62,8 @@ Also see the [ISO 6429 (ANSI) color sequences](http://www.perpetualpc.net/6429_c
 
 ## Windows
 
-Windows users should install [ANSICON](https://github.com/adoxa/ansicon) to
-enable colors in `cmd.exe`.
+Windows has its own implementation of colored output. It's possible though
+to install [ANSICON](https://github.com/adoxa/ansicon) to enable ANSI colors in `cmd.exe`.
 
 ## Bug Reports
 
@@ -70,3 +73,4 @@ This is a list of bug reports on the progress of supporting `CLICOLOR`:
  * [Waf build system](https://github.com/waf-project/waf/issues/1555)
  * [Jenkins ANSI color plugin](https://github.com/dblock/jenkins-ansicolor-plugin/issues/51)
  * [ANSICON](https://github.com/adoxa/ansicon/issues/77)
+ * [Rust compiler](https://github.com/rust-lang/rust/pull/27867)
