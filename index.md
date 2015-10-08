@@ -58,6 +58,20 @@ for i in range(0, 8):
           "\x1b[1;4{0};3{0}m\\x1b[1;3{0};4{0}m{1}".format(i, RESET))
 {% endhighlight %}
 
+Which should print:
+
+<pre>To reset attributes: \x1b[0m
+
+<span class="bold"><span class="f0">\x1b[1;30m</span></span> <span class="f0">\x1b[0;30m</span> <span class="bold"><span class="f0 b0">\x1b[1;30;40m</span></span>
+<span class="bold"><span class="f1">\x1b[1;31m</span></span> <span class="f1">\x1b[0;31m</span> <span class="bold"><span class="f1 b1">\x1b[1;31;41m</span></span>
+<span class="bold"><span class="f2">\x1b[1;32m</span></span> <span class="f2">\x1b[0;32m</span> <span class="bold"><span class="f2 b2">\x1b[1;32;42m</span></span>
+<span class="bold"><span class="f3">\x1b[1;33m</span></span> <span class="f3">\x1b[0;33m</span> <span class="bold"><span class="f3 b3">\x1b[1;33;43m</span></span>
+<span class="bold"><span class="f4">\x1b[1;34m</span></span> <span class="f4">\x1b[0;34m</span> <span class="bold"><span class="f4 b4">\x1b[1;34;44m</span></span>
+<span class="bold"><span class="f5">\x1b[1;35m</span></span> <span class="f5">\x1b[0;35m</span> <span class="bold"><span class="f5 b5">\x1b[1;35;45m</span></span>
+<span class="bold"><span class="f6">\x1b[1;36m</span></span> <span class="f6">\x1b[0;36m</span> <span class="bold"><span class="f6 b6">\x1b[1;36;46m</span></span>
+<span class="bold"><span class="f7">\x1b[1;37m</span></span> <span class="f7">\x1b[0;37m</span> <span class="bold"><span class="f7 b7">\x1b[1;37;47m</span></span>
+</pre>
+
 Also see the [ISO 6429 (ANSI) color sequences](http://www.perpetualpc.net/6429_colors.html#color_list).
 
 ## Windows
@@ -74,3 +88,4 @@ This is a list of bug reports on the progress of supporting `CLICOLOR`:
  * [Jenkins ANSI color plugin](https://github.com/dblock/jenkins-ansicolor-plugin/issues/51)
  * [ANSICON](https://github.com/adoxa/ansicon/issues/77)
  * [Rust compiler](https://github.com/rust-lang/rust/pull/27867)
+ * [supports-color package](https://github.com/chalk/supports-color/issues/32)
