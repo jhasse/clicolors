@@ -89,3 +89,7 @@ This is a list of bug reports on the progress of supporting `CLICOLOR`:
  * [ANSICON](https://github.com/adoxa/ansicon/issues/77)
  * [Rust compiler](https://github.com/rust-lang/rust/pull/27867)
  * [supports-color package](https://github.com/chalk/supports-color/issues/32)
+
+The following bug reports have been resolved:
+
+ * [CMake build system](https://cmake.org/Bug/view.php?id=15789)
