@@ -40,7 +40,7 @@ import os, sys
 
 def has_colors():
     if ((os.getenv("CLICOLOR", "0") != "0" and sys.stdout.isatty()) or
-        os.getenv("CLICOLOR_FORCE", "0") != "0":
+        os.getenv("CLICOLOR_FORCE", "0") != "0"):
         return True
     else:
         return False
