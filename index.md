@@ -15,7 +15,7 @@ That's why this page tries to create some sort of "standard" which programs
 should comply to no matter on which platform they are run.
 
 The idea is to have the environment variables `CLICOLOR` and `CLICOLOR_FORCE` (which are currently
-already used for this exacty reason on some UNIX systems). When set, the following rules
+already used for this exact reason on some UNIX systems). When set, the following rules
 should apply:
 
  * `CLICOLOR != 0`
