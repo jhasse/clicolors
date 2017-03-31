@@ -76,15 +76,16 @@ Also see the [ISO 6429 (ANSI) color sequences](http://www.perpetualpc.net/6429_c
 
 ## Windows
 
-Windows has its own implementation of colored output. It's possible though
-to install [ANSICON](https://github.com/adoxa/ansicon) to enable ANSI colors in `cmd.exe`.
+Windows 10 supports ANSI colors [since v1511](https://www.reddit.com/r/Windows10/comments/44czox/windows_10_v1511_adds_support_for_ansi_escape/).
+For earlier versions of Windows installing [ANSICON](https://github.com/adoxa/ansicon) will
+enable ANSI colors in `cmd.exe`.
 
 ## Bug Reports
 
 This is a list of bug reports on the progress of supporting `CLICOLOR`:
 
  * [clang compiler](https://llvm.org/bugs/show_bug.cgi?id=23609)
- * [Waf build system](https://github.com/waf-project/waf/issues/1555)
+ * [GCC compiler](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=80271)
  * [Jenkins ANSI color plugin](https://github.com/dblock/jenkins-ansicolor-plugin/issues/51)
  * [ANSICON](https://github.com/adoxa/ansicon/issues/77)
  * [Rust compiler](https://github.com/rust-lang/rust/pull/27867)
@@ -93,3 +94,4 @@ This is a list of bug reports on the progress of supporting `CLICOLOR`:
 The following bug reports have been resolved:
 
  * [CMake build system](https://cmake.org/Bug/view.php?id=15789)
+ * [Waf build system](https://github.com/waf-project/waf/pull/1928)
