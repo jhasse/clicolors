@@ -8,7 +8,7 @@ title:  Standard for ANSI Colors in Terminals
 The current situation to get colored output from most console commands is a
 mess.
 Some check for the `TERM` environment variable, or look for `ANSICON` on
-Windows, or need to be passed a parameter like `--color` or
+Windows, or need to be passed a parameter like `--color`, `--ansi` or
 `-fdiagnostics-color`.
 
 That's why this page tries to create some sort of "standard" which programs
@@ -90,6 +90,7 @@ This is a list of bug reports on the progress of supporting `CLICOLOR`:
  * [ANSICON](https://github.com/adoxa/ansicon/issues/77)
  * [Rust compiler](https://github.com/rust-lang/rust/pull/27867)
  * [supports-color package](https://github.com/chalk/supports-color/issues/32)
+ * [phpunit](https://github.com/sebastianbergmann/phpunit/issues/2662)
 
 The following bug reports have been resolved:
 
