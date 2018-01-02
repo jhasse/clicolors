@@ -87,7 +87,6 @@ This is a list of bug reports on the progress of supporting `CLICOLOR`:
  * [clang compiler](https://llvm.org/bugs/show_bug.cgi?id=23609)
  * [GCC compiler](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=80271)
  * [Jenkins ANSI color plugin](https://github.com/dblock/jenkins-ansicolor-plugin/issues/51)
- * [ANSICON](https://github.com/adoxa/ansicon/issues/77)
  * [Rust compiler](https://github.com/rust-lang/rust/pull/27867)
  * [supports-color package](https://github.com/chalk/supports-color/issues/32)
  * [phpunit](https://github.com/sebastianbergmann/phpunit/issues/2662)
@@ -96,3 +95,4 @@ The following bug reports have been resolved:
 
  * [CMake build system](https://cmake.org/Bug/view.php?id=15789)
  * [Waf build system](https://github.com/waf-project/waf/pull/1928)
+ * [ANSICON](https://github.com/adoxa/ansicon/issues/77)
