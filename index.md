@@ -39,7 +39,7 @@ like this Python code example:
 import os, sys
 
 def has_colors():
-    if ((os.getenv("CLICOLOR", "0") != "0" and sys.stdout.isatty()) or
+    if ((os.getenv("CLICOLOR", "1") != "0" and sys.stdout.isatty()) or
         os.getenv("CLICOLOR_FORCE", "0") != "0"):
         return True
     else:
