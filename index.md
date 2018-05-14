@@ -96,3 +96,4 @@ The following bug reports have been resolved:
  * [CMake build system](https://cmake.org/Bug/view.php?id=15789)
  * [Waf build system](https://github.com/waf-project/waf/pull/1928)
  * [ANSICON](https://github.com/adoxa/ansicon/issues/77)
+ * [Premake](https://github.com/premake/premake-core/pull/1077)
