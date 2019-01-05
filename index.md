@@ -97,3 +97,4 @@ The following bug reports have been resolved:
  * [Waf build system](https://github.com/waf-project/waf/pull/1928)
  * [ANSICON](https://github.com/adoxa/ansicon/issues/77)
  * [Premake](https://github.com/premake/premake-core/pull/1077)
+ * [picocli](https://github.com/remkop/picocli/releases/tag/v3.9.0#3.9.0-ANSI-heuristics)
