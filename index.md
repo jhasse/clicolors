@@ -86,6 +86,7 @@ This is a list of bug reports on the progress of supporting `CLICOLOR`:
 
  * [clang compiler](https://llvm.org/bugs/show_bug.cgi?id=23609)
  * [GCC compiler](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=80271)
+ * [IntelliJ](https://youtrack.jetbrains.com/issue/IDEA-205699)
  * [Jenkins ANSI color plugin](https://github.com/dblock/jenkins-ansicolor-plugin/issues/51)
  * [Rust compiler](https://github.com/rust-lang/rust/pull/27867)
  * [supports-color package](https://github.com/chalk/supports-color/issues/32)
