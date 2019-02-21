@@ -99,3 +99,4 @@ The following bug reports have been resolved:
  * [ANSICON](https://github.com/adoxa/ansicon/issues/77)
  * [Premake](https://github.com/premake/premake-core/pull/1077)
  * [picocli](https://github.com/remkop/picocli/releases/tag/v3.9.0#3.9.0-ANSI-heuristics)
+ * [ninja build system](https://github.com/ninja-build/ninja/commit/bf7107bb864d0383028202e3f4a4228c02302961)
