@@ -91,7 +91,7 @@ This is a list of bug reports on the progress of supporting `CLICOLOR`:
  * [Rust compiler](https://github.com/rust-lang/rust/pull/27867)
  * [supports-color package](https://github.com/chalk/supports-color/issues/32)
  * [phpunit](https://github.com/sebastianbergmann/phpunit/issues/2662)
- * [GitLab CI](https://gitlab.com/gitlab-org/gitlab-ce/issues/61582)
+ * [GitLab CI](https://gitlab.com/gitlab-org/gitlab/issues/28598)
 
 The following bug reports have been resolved:
 
