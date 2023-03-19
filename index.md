@@ -102,3 +102,4 @@ The following bug reports have been resolved:
  * [picocli](https://github.com/remkop/picocli/releases/tag/v3.9.0#3.9.0-ANSI-heuristics)
  * [ninja build system](https://github.com/ninja-build/ninja/commit/bf7107bb864d0383028202e3f4a4228c02302961)
  * [clifm](https://github.com/leo-arch/clifm/commit/057b7c684b25707d5ad5505a382dde2becb3eed0)
+ * [Clipboard](https://github.com/Slackadays/Clipboard/commit/8c6da08c93e567318bb268f10db5e95fba41461e)
