@@ -18,13 +18,13 @@ The idea is to have the environment variables `CLICOLOR` and `CLICOLOR_FORCE` (w
 already used for this exact reason on some UNIX systems). When set, the following rules
 should apply:
 
- * `CLICOLOR != 0`
+ * `NO_COLOR` set
+   * Don't output ANSI color escape codes, see [no-color.org](https://no-color.org)
+ * `CLICOLOR_FORCE` set, but `NO_COLOR` unset
+   * ANSI colors should be enabled no matter what.
+ * none of the above environment variables are set
    * ANSI colors are supported and should be used when the program isn't
      piped.
- * `CLICOLOR == 0`
-   * Don't output ANSI color escape codes.
- * `CLICOLOR_FORCE != 0`
-   * ANSI colors should be enabled no matter what.
 
 If you have ideas or comments please
 [create a new issue on GitHub](https://github.com/jhasse/clicolors/issues/new)
@@ -39,11 +39,11 @@ like this Python code example:
 import os, sys
 
 def has_colors():
-    if ((os.getenv("CLICOLOR", "1") != "0" and sys.stdout.isatty()) or
-        os.getenv("CLICOLOR_FORCE", "0") != "0"):
-        return True
-    else:
+    if "NO_COLOR" in os.environ:
         return False
+    if "CLICOLOR_FORCE" in os.environ:
+        return True
+    return sys.stdout.isatty()
 {% endhighlight %}
 
 ## Supported Colors
