@@ -14,7 +14,7 @@ Windows, or need to be passed a parameter like `--color`, `--ansi` or
 That's why this page tries to create some sort of "standard" which programs
 should comply to no matter on which platform they are run.
 
-The idea is to have the environment variables `CLICOLOR` and `CLICOLOR_FORCE` (which are currently
+The idea is to have the environment variables `NO_COLOR` and `CLICOLOR_FORCE` (which are currently
 already used for this exact reason on some UNIX systems). When set, the following rules
 should apply:
 
@@ -82,7 +82,7 @@ enable ANSI colors in `cmd.exe`.
 
 ## Bug Reports
 
-This is a list of bug reports on the progress of supporting `CLICOLOR`:
+This is a list of bug reports on the progress of supporting `CLICOLOR_FORCE`:
 
  * [clang compiler](https://llvm.org/bugs/show_bug.cgi?id=23609)
  * [GCC compiler](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=80271)
