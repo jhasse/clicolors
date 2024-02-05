@@ -23,8 +23,8 @@ should apply:
  * `CLICOLOR_FORCE` set, but `NO_COLOR` unset
    * ANSI colors should be enabled no matter what.
  * none of the above environment variables are set
-   * ANSI colors are supported and should be used when the program isn't
-     piped.
+   * ANSI colors are supported and should be used when the program is writing to a
+     terminal.
 
 If you have ideas or comments please
 [create a new issue on GitHub](https://github.com/jhasse/clicolors/issues/new)
