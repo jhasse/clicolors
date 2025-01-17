@@ -117,7 +117,6 @@ This is a list of bug reports on the progress of supporting `CLICOLOR_FORCE`:
  * [supports-color package](https://github.com/chalk/supports-color/issues/32)
  * [phpunit](https://github.com/sebastianbergmann/phpunit/issues/2662)
  * [GitLab CI](https://gitlab.com/gitlab-org/gitlab/issues/28598)
- * [cppcheck](https://github.com/danmar/cppcheck/pull/6270)
 
 The following bug reports have been resolved:
 
@@ -129,3 +128,4 @@ The following bug reports have been resolved:
  * [ninja build system](https://github.com/ninja-build/ninja/commit/bf7107bb864d0383028202e3f4a4228c02302961)
  * [clifm](https://github.com/leo-arch/clifm/commit/057b7c684b25707d5ad5505a382dde2becb3eed0)
  * [Clipboard](https://github.com/Slackadays/Clipboard/commit/8c6da08c93e567318bb268f10db5e95fba41461e)
+ * [cppcheck](https://github.com/danmar/cppcheck/pull/6270)
