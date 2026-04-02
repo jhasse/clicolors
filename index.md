@@ -3,6 +3,11 @@ layout: default
 title:  Standard for ANSI Colors in Terminals
 ---
 
+{: .banner}
+> **Note:** For new applications, we recommend using `FORCE_COLOR` instead of
+> `CLICOLOR_FORCE`. See [force-color.org](https://force-color.org) for details.
+> This site remains as documentation for existing users.
+
 # {{ page.title }}
 
 The current situation to get colored output from most console commands is a

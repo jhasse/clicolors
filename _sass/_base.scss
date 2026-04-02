@@ -123,6 +123,22 @@ blockquote {
 
 
 /**
+ * Banner
+ */
+blockquote.banner {
+    color: $text-color;
+    background-color: #ffffdd;
+    border-left: 4px solid #e8c600;
+    padding: $spacing-unit / 2;
+    font-style: normal;
+    letter-spacing: 0;
+    font-size: $base-font-size;
+    margin-bottom: $spacing-unit;
+}
+
+
+
+/**
  * Code formatting
  */
 pre,
