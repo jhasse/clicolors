@@ -4,9 +4,12 @@ title:  Standard for ANSI Colors in Terminals
 ---
 
 {: .banner}
-> **Note:** For new applications, we recommend using `FORCE_COLOR` instead of
-> `CLICOLOR_FORCE`. See [force-color.org](https://force-color.org) for details.
-> This site remains as documentation for existing users.
+> **Note:** This standard is deprecated. For new applications, we recommend
+> using [the force-color](https://force-color.org/) and
+> [no-color](https://web.archive.org/web/20260616201813/https://no-color.org/)
+> standards instead of this standard. Software that already supports this
+> standard should treat `FORCE_COLOR` as an alias for `CLICOLOR_FORCE`,
+> enabling color whenever either is set, unless `NO_COLOR` is also set.
 
 # {{ page.title }}
 
