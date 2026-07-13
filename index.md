@@ -26,6 +26,7 @@ The idea is to have the environment variables `NO_COLOR`, `CLICOLOR_FORCE`, and 
 (which are currently already used for this exact reason on some UNIX systems).
 When set, the following rules should apply:
 
+ * Empty variables are treated as though they were unset.
  * `NO_COLOR` set
    * Don't output ANSI color escape codes, see [no-color.org](https://no-color.org)
  * `CLICOLOR_FORCE` set, but `NO_COLOR` unset
